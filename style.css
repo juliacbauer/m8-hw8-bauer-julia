@@ -39,12 +39,37 @@ header {
 header a {
   font-size: 1.5rem;
   color: var(--off-white);
+  transition: 300ms;
+}
+
+header a:hover {
+  color: #FA5456;
+  background-color: #FDD219;
+  padding: 8px;
+  border-radius: 25px;
+  border: dotted 5px var(--danger-color);
+}
+
+nav > :nth-child(2):hover, :nth-child(3):hover {
+  color: #FA5456;
+  background-color: lightgreen;
+  padding: 8px;
+  border-radius: 25px;
+  border: dotted 5px var(--danger-color);
 }
 /* end header link animations */
 
 /* article link transitions */
 main a {
   color: var(--danger-color);
+  transition: 300ms;
+}
+
+main a:hover {
+  background-color: cornflowerblue;
+  padding: 8px;
+  border-radius: 25px;
+  border: solid 5px #FDD219;
 }
 /* end article link transitions */
 
@@ -100,6 +125,23 @@ section.hero > button {
   border-radius: 12px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: background-color .5s;
+}
+
+section.hero > button:hover {
+  color: fuchsia;
+  background-color: blueviolet;
+  font-style: italic;
+  animation: backflip 1s infinite;
+}
+
+@keyframes backflip {
+  50% {
+    transform: translateY(-50px) rotateZ(-180deg)
+  }
+  100% {
+    transform: translateY(0px) rotateZ(-360deg)
+  }
 }
 
 main article {
