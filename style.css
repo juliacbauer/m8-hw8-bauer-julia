@@ -52,7 +52,7 @@ header a:hover {
 
 .home:hover, .contact:hover {
   color: #FA5456;
-  background-color: lightgreen;
+  background-color: rgb(87, 241, 87);
   padding: 8px;
   border-radius: 25px;
   border: dotted 5px var(--danger-color);
